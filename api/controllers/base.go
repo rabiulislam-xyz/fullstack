@@ -6,9 +6,8 @@ import (
 	"net/http"
 
 	"github.com/gorilla/mux"
-	"github.com/jinzhua/gorm"
-
-	"github.com/raviulislam993/fullstack/api/models"
+	"github.com/jinzhu/gorm"
+	"github.com/rabiulislam993/fullstack/api/models"
 )
 
 type Server struct {
@@ -20,7 +19,7 @@ func (server *Server) Initialize(DbDriver, DbUser, DbPassword, DbPort, DbHost, D
 
 	var err error
 
-	DBURL := fmt.Spritf("host=%s port=%s user=%s dbname=%s sslmode=disable password=%s", DbHost, DbPort, DbUser, DbName, DbPassword)
+	DBURL := fmt.Sprintf("host=%s port=%s user=%s dbname=%s sslmode=disable password=%s", DbHost, DbPort, DbUser, DbName, DbPassword)
 	server.DB, err = gorm.Open(DbDriver, DBURL)
 	if err != nil {
 		fmt.Printf("Cannot connect to %s database", DbDriver)

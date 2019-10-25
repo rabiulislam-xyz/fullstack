@@ -6,21 +6,14 @@ require (
 	9fans.net/go v0.0.2 // indirect
 	github.com/acroca/go-symbols v0.1.1 // indirect
 	github.com/badoux/checkmail v0.0.0-20181210160741-9661bd69e9ad
-	github.com/denisenkom/go-mssqldb v0.0.0-20190515213511-eb9f6a1743f3 // indirect
 	github.com/dgrijalva/jwt-go v3.2.0+incompatible
-	github.com/erikstmartin/go-testdb v0.0.0-20160219214506-8d10e4a1bae5 // indirect
 	github.com/fatih/gomodifytags v1.0.1 // indirect
 	github.com/fatih/structtag v1.1.0 // indirect
-	github.com/go-sql-driver/mysql v1.4.1 // indirect
 	github.com/gorilla/mux v1.7.3
-	github.com/jinzhu/gorm v1.9.2
-	github.com/jinzhu/inflection v1.0.0 // indirect
-	github.com/jinzhu/now v1.0.1 // indirect
+	github.com/jinzhu/gorm v1.9.11
 	github.com/joho/godotenv v1.3.0
 	github.com/josharian/impl v0.0.0-20190715203526-f0d59e96e372 // indirect
 	github.com/karrick/godirwalk v1.12.0 // indirect
-	github.com/lib/pq v1.1.1 // indirect
-	github.com/mattn/go-sqlite3 v1.11.0 // indirect
 	github.com/nsf/gocode v0.0.0-20190302080247-5bee97b48836 // indirect
 	github.com/pkg/errors v0.8.1 // indirect
 	github.com/ramya-rao-a/go-outline v0.0.0-20181122025142-7182a932836a // indirect

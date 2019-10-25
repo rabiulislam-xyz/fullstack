@@ -1,6 +1,6 @@
 package controllers
 
-import "github.com/rabiulislam993/fullstack/api/middleares"
+import "github.com/rabiulislam993/fullstack/api/middlewares"
 
 func (s *Server) initializeRoutes() {
 	// Home Route
@@ -20,5 +20,4 @@ func (s *Server) initializeRoutes() {
 	s.Router.HandleFunc("/posts", middlewares.SetMiddlewareJSON(s.GetPosts)).Methods("GET")
 	s.Router.HandleFunc("/posts/{id}", middlewares.SetMiddlewareJSON(s.GetPost)).Methods("GET")
 	s.Router.HandleFunc("/posts/{id}", middlewares.SetMiddlewareJSON(middlewares.SetMiddlewareAuthentication(s.UpdatePost))).Methods("PUT")
-}
 }
