@@ -4,9 +4,9 @@ import "github.com/rabiulislam993/fullstack/api/middlewares"
 
 func (s *Server) initializeRoutes() {
 	// Home Route
-	s.Router.HandleFunc("/", middleares.SetMiddlewareJSON(s.Home)).Methods("GET")
+	s.Router.HandleFunc("/", middlewares.SetMiddlewareJSON(s.Home)).Methods("GET")
 
-	s.Router.HandleFunc("/login", middleares.SetMiddlewareJSON(s.Login)).Methods("POST")
+	s.Router.HandleFunc("/login", middlewares.SetMiddlewareJSON(s.Login)).Methods("POST")
 
 	//Users routes
 	s.Router.HandleFunc("/users", middlewares.SetMiddlewareJSON(s.CreateUser)).Methods("POST")
